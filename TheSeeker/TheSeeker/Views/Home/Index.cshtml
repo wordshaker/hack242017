@@ -6,6 +6,5 @@
         </div>
         <h1>Welcome to Magical Mystery Tour</h1>
         <p>Here is the cool stuff that will make this super juicy :)</p>
-        <!-- add twitter handle and mobile -->
-        <a href="https://app.cronofy.com/oauth/authorize?response_type=code&amp;client_id=HhJWCcEe6z74NAALOsGUpEXbo8ORoNTW&amp;redirect_uri=http://localhost:65012/home/congrats/&amp;scope=read_free_busy%20create_event&amp;state=JessPWhite_07446335493" 
-           class="btn btn-primary">Come have fun</a>
+            <!-- add twitter handle and mobile -->
+        <input type="button" class="btn btn-lg btn-primary btn-block" value="Come have fun" onclick="@("window.location.href='" + @Url.Action("SignUp", "Home") + "'");" />
