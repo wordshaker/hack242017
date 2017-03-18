@@ -6,6 +6,7 @@ namespace TheSeeker.Repository.Entities
     {
         public string Id { get; set; }
         public string Code { get; set; }
+        public string AccessToken { get; set; }
         public string Name { get; set; }
         public string MobileNo { get; set; }
     }

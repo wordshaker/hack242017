@@ -36,13 +36,13 @@
                 <label for="inputTwitter">Twitter name</label>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1"></span>
-                    <input type="text" class="form-control" id="inputTwitter" placeholder="Twitter username">
+                    <input type="text" class="form-control" name="inputTwitter" id="inputTwitter" placeholder="Twitter username">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputPhoneNo">Phone number</label>
                 <input type="number" id="inputPhoneNo" class="form-control" placeholder="Phone number" required>
-            </div>
+               </div>
 
             <div class="form-group">
                 <p>You will be asked to log into your calendar on the next page</p>
@@ -54,6 +54,7 @@
                     </label>
                 </div>
             </div>
+            
             <a href="https://app.cronofy.com/oauth/authorize?response_type=code&amp;client_id=HhJWCcEe6z74NAALOsGUpEXbo8ORoNTW&amp;redirect_uri=http://localhost:65012/home/confirmation/&amp;scope=read_free_busy%20create_event&amp;state=JessPWhite_07446335493"
               class="btn btn-lg btn-primary btn-block">Submit and sign into Calendar</a>
 
@@ -65,5 +66,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+            var twitter = document.getElementById("inputTwitter").value;
+        }
+    </script>
+
 </body>
 </html>
