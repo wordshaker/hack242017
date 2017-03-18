@@ -9,6 +9,8 @@ namespace TheSeeker
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             
+            routes.MapMvcAttributeRoutes();
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
@@ -17,8 +19,8 @@ namespace TheSeeker
 
             routes.MapRoute(
                 name: "Congrats",
-                url: "{action}/{id}",
-                defaults: new { action = "Congrats", id = UrlParameter.Optional }
+                url: "congrats",
+                defaults: new {controller = "Home", action = "Congrats" }
             );
 
             routes.MapRoute(
