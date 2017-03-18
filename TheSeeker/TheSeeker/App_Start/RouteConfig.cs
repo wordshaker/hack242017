@@ -32,6 +32,12 @@ namespace TheSeeker
                 url: "{action}/{id}",
                 defaults: new { action = "Confirmation", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Challenge",
+                url: "{action}/{id}",
+                defaults: new { action = "Challenge", id = UrlParameter.Optional }
+            );
         }
     }
 }
