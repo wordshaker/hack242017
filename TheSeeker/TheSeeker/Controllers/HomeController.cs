@@ -1,25 +1,34 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
 using com.esendex.sdk.messaging;
+using Cronofy;
 
 namespace TheSeeker.Controllers
 {
+    [RoutePrefix("home")]
     public class HomeController : Controller
     {
         private MessagingService _messagingService;
+        private Dictionary<string, object> _participantDetails;
 
+        //[Route("Index")]
         public ActionResult Index()
         {
             return View();
         }
 
+        [Route("congrats")]
         public ActionResult Congrats()
         {
+            var bob = Request.QueryString.Get("code");
+            //ICronofyOAuthClient afett = new CronofyOAuthClient("HhJWCcEe6z74NAALOsGUpEXbo8ORoNTW", "WWgkGCZ_M2Zo4BvRZCJhgKVUi7ZGv2rCIHsXqXDsaP18sHkkwda3H3B4 - GYd0x - cxnAu5xXm1Xy_0jjtGEyO2A");
+            //var token = afett.GetTokenFromCode(bob, "www.google.com");
             return View();
         }
 
         public ActionResult SignUp()
         {
+
             return View();
         }
 
@@ -66,7 +75,11 @@ namespace TheSeeker.Controllers
         [HttpGet]
         public void GetCustomerAvailability()
         {
-            
+            var bob = Request.QueryString.Get("code");
+            ICronofyOAuthClient afett = new CronofyOAuthClient("HhJWCcEe6z74NAALOsGUpEXbo8ORoNTW", "WWgkGCZ_M2Zo4BvRZCJhgKVUi7ZGv2rCIHsXqXDsaP18sHkkwda3H3B4 - GYd0x - cxnAu5xXm1Xy_0jjtGEyO2A");
+            var token = afett.GetTokenFromCode(bob, "www.google.com");
+
+            //_participantDetails.Add(); 
         }
     }
 }
