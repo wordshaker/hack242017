@@ -13,6 +13,21 @@ namespace TheSeeker.Controllers
             return View();
         }
 
+        public ActionResult Congrats()
+        {
+            return View();
+        }
+
+        public ActionResult SignUp()
+        {
+            return View();
+        }
+
+        public ActionResult Confirmation()
+        {
+            return View();
+        }
+
         public void AwaitingMembers(string name, string mobileNumber)
         {
             // need to figure out how to assign participants to pairs.
