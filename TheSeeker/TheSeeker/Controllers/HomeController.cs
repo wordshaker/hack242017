@@ -81,6 +81,7 @@ namespace TheSeeker.Controllers
             Random rnd = new Random();
             var chalid = rnd.Next(0, 3).ToString();
             string url = "http://magicalmysterytourhack24.azurewebsites.net/home/challenge"+"?id=" + chalid; //need to know how to make this into a workable textable limnk
+            //  string url = "http://localhost:65012//home/challenge"+"?id=" + chalid; //need to know how to make this into a workable textable limnk
             string message = $"To find out about your first most excellent adventure go to: {url}";
             //_messagingService.SendScheduledMessage(new SmsMessage("07446335493", $"Hello! {url}", "EX0226394"), System.DateTime.Now.AddMinutes(20));
             _messagingService.SendScheduledMessage(new SmsMessage("07446335493", message, "EX0226394"), System.DateTime.Now.AddSeconds(10));
