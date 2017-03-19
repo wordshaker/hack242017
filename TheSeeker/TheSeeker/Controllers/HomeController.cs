@@ -49,14 +49,14 @@ namespace TheSeeker.Controllers
             return View();
         }
 
-        [Route("challenge")]
+        [Route("challenge2")]
         public ActionResult Challenge2()
         {
             //    ViewBag.Number = Request.QueryString.Get("id"); 
             return View();
         }
 
-        [Route("challenge")]
+        [Route("challenge3")]
         public ActionResult Challenge3()
         {
             //    ViewBag.Number = Request.QueryString.Get("id"); 
