@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Challenge";
+    
 }
 
 <!DOCTYPE html>
@@ -30,14 +31,9 @@
     <div class="container">
         <h1>Challenge title</h1>
         <p>Intro copy</p>
-        @{
-            Random rnd = new Random();
-            var chalid = rnd.Next(0, 3).ToString();
-        }
-        @*<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9615.872826874116!2d-1.1555825499999999!3d52.9489951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1489850473583" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>*@
-        @Html.Raw(ChallengeRepository.challengerepo.GetById(chalid).Map);
+       @Html.Raw(ChallengeRepository.challengerepo.GetById(@ViewBag.Number).Map);
         <p>Here is the details of the challenge</p>
-        @Html.Raw("<p>"+ ChallengeRepository.challengerepo.GetById(chalid).Description.ToString() + "</p>")
+        @Html.Raw("<p>"+ ChallengeRepository.challengerepo.GetById(@ViewBag.Number).Description.ToString() + "</p>")
        
         <a class="twitter-share-button"
            href="https://twitter.com/intent/tweet?text=#MagicalMysteryTour" data-size="large">Tweet
