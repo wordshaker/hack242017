@@ -71,7 +71,6 @@ h3 {
     line-height: normal;
     letter-spacing: normal;
     color: black ;
-    color: var(--white);
 }
 
 p, ul {
