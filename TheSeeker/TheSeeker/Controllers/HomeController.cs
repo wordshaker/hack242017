@@ -78,9 +78,10 @@ namespace TheSeeker.Controllers
             //});
             _messagingService.SendScheduledMessage(new SmsMessage("07446335493", "You have signed up to be totally bodacious", "EX0226394"), System.DateTime.Now.AddSeconds(5));
 
-            //string url = "http://magicalmysterytourhack24.azurewebsites.net/home/challenge"; //need to know how to make this into a workable textable limnk
+            string url = "http://magicalmysterytourhack24.azurewebsites.net/home/challenge"; //need to know how to make this into a workable textable limnk
                                                                                            //
-            string url = "http://localhost:65012/home/challenge"; //need to know how to make this into a workable textable limnk
+           // string url = "http://localhost:65012/home/challenge"; //need to know how to make this into a workable textable limnk
+
             string message = $"To find out about your first most excellent adventure go to: {url}";
             //_messagingService.SendScheduledMessage(new SmsMessage("07446335493", $"Hello! {url}", "EX0226394"), System.DateTime.Now.AddMinutes(20));
             _messagingService.SendScheduledMessage(new SmsMessage("07446335493", message, "EX0226394"), System.DateTime.Now.AddSeconds(10));
