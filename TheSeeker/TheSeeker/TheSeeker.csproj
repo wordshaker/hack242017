@@ -255,8 +255,9 @@
     <Compile Include="Models\Availability.cs" />
     <Compile Include="Models\Participant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ChallengeRepository.cs" />
     <Compile Include="Repository\ParticipantRepository.cs" />
-    <Compile Include="Repository\Entities\Challenges.cs" />
+    <Compile Include="Repository\Entities\Challenge.cs" />
     <Compile Include="Repository\Entities\Event.cs" />
     <Compile Include="Repository\Entities\Participant.cs" />
     <Compile Include="Startup.cs" />

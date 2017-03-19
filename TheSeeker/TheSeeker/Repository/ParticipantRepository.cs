@@ -3,7 +3,7 @@ using TheSeeker.Repository.Entities;
 
 namespace TheSeeker.Repository
 {
-    public class ParticipantRepository : MongoRepository<Challenges>
+    public class ParticipantRepository : MongoRepository<Participant>
     {
         public static MongoRepository<Participant> participantrepo = new MongoRepository<Participant>();
 
