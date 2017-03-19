@@ -267,6 +267,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\ballet.gif" />
+    <Content Include="Content\images\jessr.gif" />
     <Content Include="Content\images\melon.png" />
     <Content Include="Content\images\mmt-logo.png" />
     <Content Include="Content\images\rainbow.png" />
@@ -311,6 +313,8 @@
     <Content Include="Views\Home\Congrats.cshtml" />
     <Content Include="Views\Home\Confirmation.cshtml" />
     <Content Include="Views\Home\Challenge.cshtml" />
+    <Content Include="Views\Home\Challenge2.cshtml" />
+    <Content Include="Views\Home\Challenge3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
