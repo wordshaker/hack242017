@@ -23,3 +23,141 @@ textarea {
     background: -moz-linear-gradient(#e8fafa, white);
     background: linear-gradient(#e8fafa, white);
 }
+
+
+/* Color palette */
+
+:root {
+    --tealish: #2b9caa ;
+    --purple: #9a22a0 ;
+    --cerise: #ea1b6f ;
+    --golden-yellow: #ffc32c ;
+    --dusty-orange: #f9892d ;
+    --aqua: #1ccdd1 ;
+    --white: #ffffff ;
+}
+
+/* Text styles */
+
+h1 {
+    font-family: Asap;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.12;
+    letter-spacing: normal;
+    color: #2b9caa ;
+    color: var(--tealish);
+}
+
+h2 {
+    font-family: Asap;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #39393a ;
+}
+
+h3 {
+    font-family: Asap;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff ;
+    color: var(--white);
+}
+
+p, ul {
+    font-family: Asap;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4a4a4a ;
+}
+
+.field-placeholder {
+    font-family: Asap;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9b9b9b ;
+}
+
+caption {
+    font-family: Asap;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4a4a4a ;
+}
+.big-logo {
+    width: 280px;
+    margin: 24px 0 0 0;
+}
+
+.small-logo {
+    width: 160px;
+    margin: 24px 0 0 0;
+}
+
+.divider {
+    color: #1ccdd1 ;
+    background: #1ccdd1 ;
+    height: 2px;
+}
+
+.tealish {
+    color: #2b9caa;
+}
+
+.tealishwell {
+    background: #2b9caa;
+}
+.tealishwell p {
+    color: white;
+}
+
+a#btn1.btn.btn-primary { 
+
+    height: 60px;
+    border-radius: 5px;
+    background: #ffc32c;
+    background-color: var(--golden-yellow);
+    box-shadow: 0 2.5px 0 0 #f9892d ;
+    box-shadow: 0 2.5px 0 0 var(--dusty-orange);
+    border: none;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 30px;
+    color: #39393a;
+    font-weight: bold;
+}
+
+.footer {
+    background-image: url("/Content/images/rainbow.png");
+    height: 40px;
+    background-repeat: repeat-x;
+    margin: 10px 0 0 0;
+}
+.watermelon {
+    background-image: url("/Content/images/melon.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-bottom: 30px;
+}
